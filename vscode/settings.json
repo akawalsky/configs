@@ -1,8 +1,37 @@
 {
     "window.zoomLevel": 0,
-    
-    "files.autoSave": "onFocusChange",
-    "files.trimTrailingWhitespace": true,
 
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "editor.tabSize": 2,
+    "editor.rulers": [ 80, 120 ],
+
+    "workbench.colorTheme": "Material Syntax - Dark",
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background": "#ffffff38",
+        "editorIndentGuide.activeBackground": "#ffffff77",
+        "editorRuler.foreground": "#ff000048",
+    },
+    "workbench.editor.labelFormat": "short",
+
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+
+    "explorer.confirmDragAndDrop": false,
+
+    "eslint.options": {
+        "configFile": "/Users/kawalsky/code/lint_settings/eslint_settings.js"
+    },
+    "eslint.run": "onSave",
+    "ruby.rubocop.configFilePath": "/Users/kawalsky/code/lint_settings/rubocop_settings.yml",
+
+    "gitlens.codeLens.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "cmake.configureOnOpen": true,
+
+    "vscode_custom_css.imports": [
+        "/Users/kawalsky/p_code/custom_vscode.css"
+    ],
+    "vscode_custom_css.policy": true,
 }

@@ -1,13 +1,136 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
+  {
+    "key": "alt+cmd+l",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+right",
+    "command": "cursorWordPartRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+left",
+    "command": "cursorWordPartLeft",
+    "when": "editorTextFocus"
+  },
   {
     "key": "cmd+backspace",
     "command": "editor.action.deleteLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "deleteWordPartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+delete",
+    "command": "deleteWordPartRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "cursorWordPartLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "cursorWordPartRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+cmd+k",
-    "command": "-editor.action.deleteLines",
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+left",
+    "command": "-editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+right",
+    "command": "-editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
 ]
